@@ -18,7 +18,7 @@ public class ProfissionalController {
 
 
     @GetMapping("/profissionais")
-    public ResponseEntity<List<Profissional>> list(@RequestParam String query, @RequestParam List<String> fields) throws Exception {
+    public ResponseEntity<List<Profissional>> list(@RequestParam(required = false, defaultValue = "") String query, @RequestParam(required = false, defaultValue = "") List<String> fields) throws Exception {
         List<Profissional> items = repository.list(query);
         if (!fields.isEmpty()) {
             for (Profissional profissional : items) {
