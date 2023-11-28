@@ -8,12 +8,16 @@ Controle de cadastro de Profissionais e seus contatos
 
 Testar os conhecimentos técnicos
 
-## Jar
+## Variaveis de Ambiente
 
-Copie o arquivo jar para uma pasta de sua preferencia
+Necessario criar variaveis para o banco de dados
 
-```bash
-Directory: C:\dev\solid\target\solid-0.0.1-SNAPSHOT.jar
+```python
+
+spring.datasource.url=${solid_datasource}
+spring.datasource.username=${solid_username}
+spring.datasource.password=${solid_password}
+
 ```
 
 # API Profissional
